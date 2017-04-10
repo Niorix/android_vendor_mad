@@ -58,10 +58,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libem_sensor_jni
 
-# Bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/mad/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
-
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # Tethering
