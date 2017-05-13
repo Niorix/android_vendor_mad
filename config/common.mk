@@ -9,10 +9,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/mad/prebuilt/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
 
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
-
 # Snap
 PRODUCT_PACKAGES += \
     Snap
