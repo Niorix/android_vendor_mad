@@ -1,6 +1,7 @@
 # Audio
 PRODUCT_PACKAGES += \
     audio_policy.default \
+    libaudio-resampler \
     audio.r_submix.default \
     audio.a2dp.default \
     audio.usb.default \
