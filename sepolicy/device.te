@@ -25,6 +25,9 @@ type Vcodec_device, dev_type;
 type M4U_device_device, dev_type;
 type mtk_smi_device, dev_type;
 
+# SPM
+type spm_device, dev_type;
+
 # NFC
 type mt6605_device, dev_type;
 
@@ -42,6 +45,7 @@ type nvdata_device, dev_type;
 type protect1_device, dev_type;
 type protect2_device, dev_type;
 type logo_block_device, dev_type;
+type para_block_device, dev_type;
 type mmc_device, dev_type;
 type voldblk_device, dev_type;
 
