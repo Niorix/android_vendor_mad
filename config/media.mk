@@ -1,14 +1,14 @@
 # Audio
 PRODUCT_PACKAGES += \
-    audio_policy.default \
-    libaudio-resampler \
-    audio.r_submix.default \
     audio.a2dp.default \
     audio.usb.default \
+    audio.r_submix.default \
+    libaudiopolicymanagerdefault \
     libtinyalsa \
     libtinycompress \
     libtinymix \
-    libtinyxml
+    libtinyxml \
+    libfs_mgr
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:/system/etc/audio_policy_volumes.xml \
