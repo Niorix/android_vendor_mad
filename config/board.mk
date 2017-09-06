@@ -36,7 +36,3 @@ BOARD_HAVE_BLUETOOTH := true
 
 # Charger
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
-
-# SELinux
-BOARD_SEPOLICY_DIRS := \
-    vendor/mad/sepolicy

@@ -68,11 +68,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=14 \
     ro.config.media_vol_steps=30
 
-# SELinux
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
-
-
 # include other configs
 include vendor/mad/config/permissions.mk
 include vendor/mad/config/media.mk
