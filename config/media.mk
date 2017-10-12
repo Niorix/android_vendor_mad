@@ -9,6 +9,7 @@ PRODUCT_PACKAGES += \
     libtinymix \
     libtinyxml \
     libfs_mgr
+    SoundRecorder
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:/system/etc/audio_policy_volumes.xml \
