@@ -32,6 +32,10 @@ WIFI_DRIVER_STATE_OFF		 := 0
 RECOVERY_VARIANT := twrp
 # TWRP
 ifeq ($(RECOVERY_VARIANT), twrp)
+TW_USE_TOOLBOX := true
+TW_INCLUDE_NTFS_3G := true
+TW_EXCLUDE_SUPERSU := true
+TW_NO_EXFAT_FUSE := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
