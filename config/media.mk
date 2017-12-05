@@ -8,7 +8,7 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libtinymix \
     libtinyxml \
-    libfs_mgr
+    libfs_mgr \
     SoundRecorder
 
 PRODUCT_COPY_FILES += \
