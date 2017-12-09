@@ -78,4 +78,3 @@ include vendor/mad/config/permissions.mk
 include vendor/mad/config/media.mk
 include vendor/mad/config/wifi.mk
 include vendor/mad/config/telephony.mk
-include vendor/mad/config/google_override.mk
