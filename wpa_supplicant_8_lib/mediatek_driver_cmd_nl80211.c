@@ -145,7 +145,11 @@ int wpa_driver_nl80211_driver_cmd(void *priv, char *cmd, char *buf,
         int state;
         state = atoi(cmd + 10);
         wpa_printf(MSG_DEBUG, "POWERMODE=%d", state);
-    }  else if (os_strncmp(cmd, "MACADDR", os_strlen("MACADDR")) == 0) {
+    } 
+    else if (os_strncasecmp(cmd, "SETSUSPENDMODE ", 15) == 0) {       
+        handled = 0; /* 6630 driver handled this command in driver, so give a chance to 6630 driver */
+    }
+    else if (os_strncmp(cmd, "MACADDR", os_strlen("MACADDR")) == 0) {
         u8 macaddr[ETH_ALEN] = {};
         os_memcpy(&macaddr, wpa_s->own_addr, ETH_ALEN);
         ret = snprintf(buf, buf_len, "Macaddr = " MACSTR "\n", MAC2STR(macaddr));
