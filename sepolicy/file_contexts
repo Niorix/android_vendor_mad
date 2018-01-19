@@ -63,8 +63,14 @@
 /dev/wmtdetect                                                  u:object_r:wmtdetect_device:s0
 /dev/ttyC0                                                      u:object_r:gsm0710muxd_device:s0
 /dev/radio(/.*)?                                                u:object_r:radio_device:s0
+/dev/fm                                                         u:object_r:fm_device:s0
 /dev/Vcodec                                                     u:object_r:Vcodec_device:s0
 /dev/M4U_device(/.*)?                                           u:object_r:M4U_device_device:s0
+/dev/spm                                                        u:object_r:spm_device:s0
+/dev/mt6605                                                     u:object_r:mt6605_device:s0
+/dev/esfp0                                                      u:object_r:esfp0_device:s0
+/dev/madev0                                                     u:object_r:madev0_device:s0
+
 
 # Sockets
 /dev/socket/rild[2-4]                                           u:object_r:rild_socket:s0
@@ -96,6 +102,7 @@
 /dev/block/platform/mtk-msdc\.0/[0-9]+\.(msdc|MSDC)0/by-name/frp       u:object_r:frp_block_device:s0
 /dev/block/platform/mtk-msdc\.0/[0-9]+\.(msdc|MSDC)0/by-name/metadata  u:object_r:metadata_block_device:s0
 /dev/block/platform/mtk-msdc\.0/[0-9]+\.(msdc|MSDC)0/by-name/para      u:object_r:para_block_device:s0
+/dev/block/vold(/.*)?                                                  u:object_r:voldblk_device:s0
 /dev/block/mmcblk1                                                     u:object_r:mmc_device:s0
 /dev/block/zram0                                                       u:object_r:swap_block_device:s0
 
@@ -134,3 +141,4 @@
 /data/ccci_cfg(/.*)?                                            u:object_r:ccci_cfg_file:s0
 /data/.tp(/.*)?                                                 u:object_r:thermal_manager_data_file:s0
 /data/\.tp\.settings                                            u:object_r:thermal_manager_data_file:s0
+/data/nfc_socket(/.*)?                                          u:object_r:nfc_socket:s0
